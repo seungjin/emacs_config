@@ -1,0 +1,63 @@
+;;My references
+
+;;;;;;;;Key Bindings
+;;;;;;;;
+;;
+;;      M-f             next woird
+;;      M-b             previous word
+;;      C-a             begining of line
+;;      C-e             end of line
+;;      C-k             delete line (starting from cursor)
+;;      C-d             delete next character after the cursor
+;;      C-y             restore (yank) line
+;;      C-x i           insert (file)
+;;      M-<             top of file
+;;      M->             bottom of file
+;;      C-v             next screen
+;;      M-v             previous screen
+;;      C-s             search
+;;      M-x             and then type "goto-line"
+;;      C-x C-s         save file
+;;      C-x C-c         quite emacs
+;;      C-z             suspend emacs (fg to restore)
+;;      C-x C-w         save file to different name (save as)
+;;      C-u M-! date    print data      
+;;      C-g             If you are in a key request sequence that you can't get out of, this returns you to the main buffer.
+;;
+;;      M-x replace-string RET your_serach_string RET your_replace_string
+;;      M-(a number)       digit-argument         Do the next command (a number) of times. ex: M-10 C-b -> back 10 cursors
+;;
+;;;;;;;;
+
+
+
+;(shrink-window 10)	;;
+;(enlarge-window 10)	;;
+;(enlarge-window-horizontally 10) ;; C-x }
+
+;(split-window-vertically)	;; C-x 2
+;(split-window-horizontally)	;; C-x 2
+
+;(other-window)			;; C-x o
+;(scroll-other-window)		;; C-M-o
+
+;(kill-window)			;; C-x 0
+;(delete-other-windows)		;; C-x 1
+
+;(switch-to-buffer)		;; C-x b {buffer} RET
+;(switch-to-buffer-other-window)   ;; C-x 4 {buffer} RET
+
+;(select-window (previous-window))
+;(select-window (next-window))
+
+;(global-hl-line-mode)
+;(hl-line-mode)
+;(global-linum-mode)
+;(linum-mode)
+
+;(windmove-left)
+;(windmove-right)
+;(windmove-up)
+;(windmove-down)
+;
+;(set-frame-width (selected-frame) 80)
