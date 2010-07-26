@@ -1,0 +1,3 @@
+setup
+ln -s ~/Documents/my_emacs_configuration/dot_emacs .emacs
+ln -s ~/Docuemtns/my_emacs_configuration/dot_emcs.d .emacs.d
