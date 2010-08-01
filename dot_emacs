@@ -1,5 +1,7 @@
 (setq load-path (append '("~/.emacs.d") load-path))
 
+;; I always run a shell in Emacs. Always always.
+(shell)
 
 ;;'side line number'
 (require 'linum)

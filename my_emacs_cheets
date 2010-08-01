@@ -26,6 +26,8 @@
 ;;
 ;;      M-x replace-string RET your_serach_string RET your_replace_string
 ;;      M-(a number)       digit-argument         Do the next command (a number) of times. ex: M-10 C-b -> back 10 cursors
+;;      C-l             recenter; Redraw the screen with the current line in the center.
+;;
 ;;
 ;;;;;;;;
 
@@ -61,3 +63,5 @@
 ;(windmove-down)
 ;
 ;(set-frame-width (selected-frame) 80)
+;(recenter)
+
