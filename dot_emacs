@@ -1,6 +1,6 @@
 (setq load-path (append '("~/.emacs.d") load-path))
 
-;; I always run a shell in Emacs. Always always.
+;;I always run a shell in Emacs. Always always.
 (shell)
 
 ;;'side line number'
@@ -41,26 +41,26 @@
 ;;COMMON LISP
 ;;http://www.franz.com/emacs/
 ; Emacs-Lisp interface.  
-(push "~/Applications/AllegroCL/eli" load-path)
-(load "fi-site-init.el")
+;(push "~/Applications/AllegroCL/eli" load-path)
+;(load "fi-site-init.el")
 ;
-(setq fi:common-lisp-image-name "~/Applications/AllegroCL/alisp.exe") 
-(setq fi:common-lisp-image-file "~/Applications/AllegroCL/alisp.dxl") 
-(setq fi:common-lisp-directory "~/Applications/AllegroCL") 
+;(setq fi:common-lisp-image-name "~/Applications/AllegroCL/alisp.exe") 
+;(setq fi:common-lisp-image-file "~/Applications/AllegroCL/alisp.dxl") 
+;(setq fi:common-lisp-directory "~/Applications/AllegroCL") 
 ;;END OF COMMON LISP SETTING
 
 ;;SLIME
 ;;http://www.franz.com/emacs/slime.lhtml
 ;; update this path to the correct location.
-(add-to-list 'load-path "~/Applications/slime")
-(require 'slime-autoloads)
+;(add-to-list 'load-path "~/Applications/slime")
+;(require 'slime-autoloads)
 
-(eval-after-load "slime"
-  '(progn
-    (add-to-list 'load-path "~/Applications/slime/contrib")
-    (slime-setup '(slime-fancy slime-banner))
-    (setq slime-complete-symbol*-fancy t)
-    (setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)))
+;(eval-after-load "slime"
+;  '(progn
+;    (add-to-list 'load-path "~/Applications/slime/contrib")
+;    (slime-setup '(slime-fancy slime-banner))
+;    (setq slime-complete-symbol*-fancy t)
+;    (setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)))
 
 ;; Optionally, specify the Lisp program you are using. Default is "lisp"
 ;; If the Allegro directory is not in your PATH environment variable

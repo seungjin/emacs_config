@@ -28,7 +28,7 @@
 ;;      M-(a number)       digit-argument         Do the next command (a number) of times. ex: M-10 C-b -> back 10 cursors
 ;;      C-l             recenter; Redraw the screen with the current line in the center.
 ;;
-;;
+;;     C-x b BUFFER <RET>       create new buffer
 ;;;;;;;;
 
 
