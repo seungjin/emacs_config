@@ -31,6 +31,8 @@
 ;;      C-x b BUFFER <RET>       create new buffer
 ;;      M-x rename-buffer <RET>  rename buffer
 ;;      M-x load-file RET ~/.emacs RET  Reload .emacs without restarting.
+;;      M-x auto-revert-tail-mode
+;;      M-x auto-revert-mode
 ;;;;;;;;
 
 
@@ -58,7 +60,7 @@
 ;(hl-line-mode)
 ;(global-linum-mode)
 ;(linum-mode)
-
+;(auto-revert-mode)
 ;(windmove-left)
 ;(windmove-right)
 ;(windmove-up)
@@ -67,3 +69,4 @@
 ;(set-frame-width (selected-frame) 80)
 ;(recenter)
 
+;(auto-revert-tail-mode)

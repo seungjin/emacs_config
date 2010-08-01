@@ -7,9 +7,12 @@
 (require 'linum)
 (global-linum-mode)
 
+(setq line-number-mode t) 
+(setq column-number-mode t)
+
 ;;highlight line number
-;;(hl-line-mode)
-(global-hl-line-mode)
+;;(hl-line-mode 1)
+(global-hl-line-mode 1)
 (set-face-background 'hl-line "#CCCCCC")  ;; Emacs 22 Only
 ;(set-face-background 'hl-line "light yellow") ;; Emacs 22 Only
 ;(set-face-background 'highlight "#CCCCCC")  ;; Emacs 21 Only
@@ -17,6 +20,9 @@
 
 ;;tab space
 (setq default-tab-width 4)
+
+;;
+(global-auto-revert-mode 1)
 
 ;;
 (setq tramp-default-method "ssh")
