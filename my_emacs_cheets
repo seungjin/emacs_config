@@ -30,6 +30,7 @@
 ;;
 ;;      C-x b BUFFER <RET>       create new buffer
 ;;      M-x rename-buffer <RET>  rename buffer
+;;      M-x load-file RET ~/.emacs RET  Reload .emacs without restarting.
 ;;;;;;;;
 
 
