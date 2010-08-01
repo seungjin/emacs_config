@@ -7,6 +7,13 @@
 (require 'linum)
 (global-linum-mode)
 
+;;tab space
+(setq default-tab-width 4)
+
+;;
+(setq tramp-default-method "ssh")
+(require 'tramp)
+
 ;;;Clearing Shell Mode Output
 ;;http://www.emacswiki.org/emacs/ShellMode#toc11
 (defun clear-shell ()
