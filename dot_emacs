@@ -10,9 +10,9 @@
 ;;highlight line number
 ;;(hl-line-mode)
 (global-hl-line-mode)
-;(set-face-background 'hl-line "#330")  ;; Emacs 22 Only
-(set-face-background 'hl-line "light yellow") ;; Emacs 22 Only
-;(set-face-background 'highlight "#330")  ;; Emacs 21 Only
+(set-face-background 'hl-line "#CCCCCC")  ;; Emacs 22 Only
+;(set-face-background 'hl-line "light yellow") ;; Emacs 22 Only
+;(set-face-background 'highlight "#CCCCCC")  ;; Emacs 21 Only
 ;
 
 ;;tab space
