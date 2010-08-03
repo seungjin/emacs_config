@@ -70,3 +70,4 @@
 ;(recenter)
 
 ;(auto-revert-tail-mode)
+;(revert-buffer)

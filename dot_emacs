@@ -39,8 +39,8 @@
 
 
 ;;;clojure-mode
-(add-to-list 'load-path' "~/.emacs.d/emacs-clojure/clojure-mode")
-(require 'clojure-mode)
+;(add-to-list 'load-path' "~/.emacs.d/emacs-clojure/clojure-mode")
+;(require 'clojure-mode)
 
 ;;swank-clojure
 ;(add-to-list 'load-path "~/opt/lib/emacs-clojure/swank-clojure")
@@ -51,11 +51,11 @@
 ;(require 'swank-clojure-autoload)
 
 ;; slime
-(eval-after-load "slime"
-  '(progn (slime-setup '(slime-repl))))
-(add-to-list 'load-path "~/.emacs.d/emacs-clojure/slime")
-(require 'slime)
-(slime-setup)
+;(eval-after-load "slime"
+;  '(progn (slime-setup '(slime-repl))))
+;(add-to-list 'load-path "~/.emacs.d/emacs-clojure/slime")
+;(require 'slime)
+;(slime-setup)
 ;;;End of clojure-mode
 
 
@@ -121,3 +121,26 @@
 ;;;http://www.emacswiki.org/emacs/JavaScriptMode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
 (autoload 'javascript-mode "javascript" nil t)
+;;; This was installed by package-install.el.
+;;; This provides support for the package system and
+;;; interfacing with ELPA, the package archive.
+;;; Move this code earlier if you want to reference
+;;; packages in your .emacs.
+(when
+    (load
+     (expand-file-name "~/.emacs.d/elpa/package.el"))
+  (package-initialize))
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(gud-gdb-command-name "gdb --annotate=1")
+ '(inferior-lisp-program "java -cp /Users/seungjin/Applications/clojure-1.1.0/lib/clojure.jar clojure.main")
+ '(large-file-warning-threshold nil))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
