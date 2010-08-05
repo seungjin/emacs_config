@@ -1,7 +1,7 @@
 #setup for mac
-ln -s ~/Documents/emacs_config/dot_emacs .emacs
-ln -s ~/Documents/emacs_config/dot_emacs.d .emacs.d
+ln -s ~/Documents/emacs_config/dot_emacs ~/.emacs
+ln -s ~/Documents/emacs_config/dot_emacs.d ~/.emacs.d
 
 #setup for linux
-ln -s ./documents/emacs_config/dot_emacs .emacs
-ln -s ./documents/emacs_config/dot_emacs.d .emacs.d
+ln -s ~/documents/emacs_config/dot_emacs ~/.emacs
+ln -s ~/documents/emacs_config/dot_emacs.d ~/.emacs.d
