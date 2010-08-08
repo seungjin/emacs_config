@@ -11,6 +11,10 @@
 
 (setq load-path (append '("~/.emacs.d") load-path))
 
+;; my email setting / exmac gnus
+(load "~/.emacs.gnus")
+
+
 ;;no menu bar
 (menu-bar-mode 0)
 
@@ -168,3 +172,5 @@
 (autoload 'mode-compile-kill "mode-compile"
  "Command to kill a compilation launched by `mode-compile'" t)
 (global-set-key "\C-ck" 'mode-compile-kill)
+
+

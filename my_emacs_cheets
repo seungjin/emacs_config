@@ -71,3 +71,4 @@
 
 ;(auto-revert-tail-mode)
 ;(revert-buffer)
+;(auto-revert-mode 1)
