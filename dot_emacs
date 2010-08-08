@@ -6,7 +6,7 @@
 ;;
 ;; http://tromey.com/elpa/install.html
 ;; Emacs Lisp PAckage Archive
-
+;; Run the command M-x package-list-packages.
 
 
 (setq load-path (append '("~/.emacs.d") load-path))
@@ -54,6 +54,11 @@
 
 ;;; clojure-mode with emacs
 ;;; http://www.assembla.com/wiki/show/clojure/Getting_Started_with_Emacs
+;;; Run the command M-x package-list-packages.
+;;; Select clojure-mode (press i), and then install the selected package (press x).
+;;; # M-x describe-variable inferior-lisp-program
+;;; Customize the variable to point to a command that launches a Clojure REPL. You can use an absolute path, or a relative path that will be interpreted relative to the current directory in emacs
+
 
 ;;COMMON LISP
 ;;http://www.franz.com/emacs/
