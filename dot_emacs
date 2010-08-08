@@ -1,3 +1,14 @@
+;;;
+;;;
+;;;
+
+
+;;
+;; http://tromey.com/elpa/install.html
+;; Emacs Lisp PAckage Archive
+
+
+
 (setq load-path (append '("~/.emacs.d") load-path))
 
 ;;no menu bar
@@ -41,26 +52,8 @@
      (setq comint-buffer-maximum-size old-max))) 
 
 
-;;;clojure-mode
-;(add-to-list 'load-path' "~/.emacs.d/emacs-clojure/clojure-mode")
-;(require 'clojure-mode)
-
-;;swank-clojure
-;(add-to-list 'load-path "~/opt/lib/emacs-clojure/swank-clojure")
-;(setq swank-clojure-jar-path "~/Applications/clojure-1.1.0/clojure.jar"
-;      seank-clojure-extra-classpath (list
-;				     "~/opt/lib/emacs-clojure/swank-clojure"
-;				     "~/Applications/clojure-contrib-1.1.0/clojure-contrib.jar"))
-;(require 'swank-clojure-autoload)
-
-;; slime
-;(eval-after-load "slime"
-;  '(progn (slime-setup '(slime-repl))))
-;(add-to-list 'load-path "~/.emacs.d/emacs-clojure/slime")
-;(require 'slime)
-;(slime-setup)
-;;;End of clojure-mode
-
+;;; clojure-mode with emacs
+;;; http://www.assembla.com/wiki/show/clojure/Getting_Started_with_Emacs
 
 ;;COMMON LISP
 ;;http://www.franz.com/emacs/
