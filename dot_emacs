@@ -14,12 +14,14 @@
 ;; my email setting / exmac gnus
 (load "~/.emacs.gnus")
 
-
 ;;no menu bar
 (menu-bar-mode 0)
 
 ;;I always run a shell in Emacs. Always always.
 (shell)
+
+;; 
+(auto-revert-mode 1)
 
 ;;'side line number'
 (require 'linum)
