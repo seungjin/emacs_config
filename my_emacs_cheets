@@ -1,4 +1,4 @@
-;;My references
+o;;My references
 
 ;;;;;;;;Key Bindings
 ;;;;;;;;
@@ -38,7 +38,8 @@
 
 
 ;(shrink-window 10)	;;
-;(enlarge-window 10)	;;
+;(enlarge
+-window 10)	;;
 ;(enlarge-window-horizontally 10) ;; C-x }
 
 ;(split-window-vertically)	;; C-x 2
