@@ -153,6 +153,10 @@
  )
 
 
+;;;
+;;;
+;;; The SBCL binary and command-line arguments
+;     (setq inferior-lisp-program "/Users/seungjin/Applications/sbcl-1.0.29/bin/sbcl --noinform")
 
 
 
