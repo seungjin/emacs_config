@@ -73,3 +73,10 @@ o;;My references
 ;(auto-revert-tail-mode)
 ;(revert-buffer)
 ;(auto-revert-mode 1)
+
+
+
+;; change read/write mode 
+; M-x toggle-read-only
+; C-x C-q
+;(toggle-read-only 1)
