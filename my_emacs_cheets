@@ -33,6 +33,15 @@ o;;My references
 ;;      M-x load-file RET ~/.emacs RET  Reload .emacs without restarting.
 ;;      M-x auto-revert-tail-mode
 ;;      M-x auto-revert-mode
+;;
+;;
+;;      CODE FOLDING
+;;      M-1 C-x $
+;;      Un-CODE FOLDING
+;;      C-x $
+;;
+;;
+;;
 ;;;;;;;;
 
 
