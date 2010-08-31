@@ -33,6 +33,7 @@ o;;My references
 ;;      M-x load-file RET ~/.emacs RET  Reload .emacs without restarting.
 ;;      M-x auto-revert-tail-mode
 ;;      M-x auto-revert-mode
+;;      C-u M-! date       print current time/date into file/buffer
 ;;;;;;;;
 
 
