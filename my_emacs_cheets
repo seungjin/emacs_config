@@ -1,4 +1,4 @@
-o;;My references
+;;My references
 
 ;;;;;;;;Key Bindings
 ;;;;;;;;
@@ -33,7 +33,6 @@ o;;My references
 ;;      M-x load-file RET ~/.emacs RET  Reload .emacs without restarting.
 ;;      M-x auto-revert-tail-mode
 ;;      M-x auto-revert-mode
-<<<<<<< HEAD
 ;;
 ;;
 ;;      CODE FOLDING
@@ -45,14 +44,12 @@ o;;My references
 ;;
 =======
 ;;      C-u M-! date       print current time/date into file/buffer
->>>>>>> 9b0b3b2fde5578c99aaf926d13d7c3d5b769a067
 ;;;;;;;;
 
 
 
 ;(shrink-window 10)	;;
-;(enlarge
--window 10)	;;
+;(enlarge-window 10)	;;
 ;(enlarge-window-horizontally 10) ;; C-x }
 
 ;(split-window-vertically)	;; C-x 2
