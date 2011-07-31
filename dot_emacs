@@ -12,7 +12,9 @@
 (setq load-path (append '("~/.emacs.d") load-path))
 
 ;; my email setting / exmac gnus
-(load "~/.emacs.gnus")
+;; (load "~/.emacs.gnus")
+;; decided not to use gnus/emacs to check my email
+
 
 ;;no menu bar
 (menu-bar-mode 0)
@@ -39,10 +41,11 @@
 ;
 
 ;;tab space
-(setq default-tab-width 4)
+;;I like tab space = 2. 
+(setq default-tab-width 2)
 
 (setq-default indent-tabs-mode nil)    ; use only spaces and no tabs
-(setq default-tab-width 4)
+(setq default-tab-width 2)
 
 ;;
 (global-auto-revert-mode 1)
@@ -68,11 +71,12 @@
 
 
 ;;; clojure-mode with emacs
-;;; http://www.assembla.com/wiki/show/clojure/Getting_Started_with_Emacs
-;;; Run the command M-x package-list-packages.
-;;; Select clojure-mode (press i), and then install the selected package (press x).
-;;; # M-x describe-variable inferior-lisp-program
-;;; Customize the variable to point to a command that launches a Clojure REPL. You can use an absolute path, or a relative path that will be interpreted relative to the current directory in emacs
+;;; http://dev.clojure.org/display/doc/Getting+Started+with+Emacs
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'package)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
 
 
 ;;COMMON LISP
@@ -103,7 +107,7 @@
 ;; If the Allegro directory is not in your PATH environment variable
 ;; this should be a fully qualified path.
 ;; choose one of the below based on Express or non-Express usage
-(setq inferior-lisp-program "~/Applications/AllegroCL/alisp") 
+;;(setq inferior-lisp-program "~/Applications/AllegroCL/alisp") 
 ;;(setq inferior-lisp-program "allegro-express") 
 
 ;;;; python development
@@ -127,9 +131,9 @@
      (define-key python-mode-map "\C-m" 'newline-and-indent)))
 
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 
-(setq-default py-indent-offset 4)
+(setq-default py-indent-offset 2)
 
 
 ;;;javascript mode
