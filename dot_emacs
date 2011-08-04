@@ -59,11 +59,20 @@
 
 ;; http://dev.clojure.org/display/doc/Getting+Started+with+Emacs
 
-(add-to-list 'load-path "~/.emacs.d/elpa")
-(require 'package)
-(add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)
+;(add-to-list 'load-path "~/.emacs.d/elpa")
+;(require 'package)
+;(add-to-list 'package-archives
+;	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+;(package-initialize)
+
+(load "~/.emacs.d/clojure-mode/clojure-mode.el")
+
+;; (require 'paredit) if you didn't install via package.el
+(defun turn-on-paredit () (paredit-mode 1))
+(add-hook 'clojure-mode-hook 'turn-on-paredit)
+
+
+
 
 (add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
 (require 'color-theme)
@@ -71,6 +80,5 @@
   '(progn
      (color-theme-initialize)
      (color-theme-charcoal-black)))
-
 
 (scroll-bar-mode)
