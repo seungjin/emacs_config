@@ -32,7 +32,7 @@
 
 ;;highlight line numbercolor-theme-6.6.0
 ;;(hl-line-mode 1)
-(global-hl-line-mode 1)
+;;(global-hl-line-mode 1)
 ;;(set-face-background 'hl-line "#CCCCCC")  ;; Emacs 22 Only
 ;(set-face-background 'hl-line "light yellow") ;; Emacs 22 Only
 ;(set-face-background 'highlight "#CCCCCC")  ;; Emacs 21 Only
@@ -86,3 +86,5 @@
      (color-theme-charcoal-black)))
 
 (scroll-bar-mode)
+(cua-mode t)
+(shell)
