@@ -1,3 +1,7 @@
+
+
+;;; emacs version 23.2 on mac
+
 ;;;
 ;;; Reload your ~/.emacs file or restart Emacs
 ;;; Invoke M-x package-refresh-content
