@@ -93,4 +93,5 @@
 (setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
 
 (set-default-font "-apple-Inconsolata-medium-normal-normal-*-13-*-*-*-m-0-iso10646-1")
-
+;; download apple inconsolata font:http://www.levien.com/type/myfonts/inconsolata.html
+;; http://www.google.com/webfonts/specimen/Inconsolata 
