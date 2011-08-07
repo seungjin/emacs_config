@@ -83,7 +83,6 @@
      (color-theme-initialize)
      (color-theme-charcoal-black)))
 
-
 ;;http://www.emacswiki.org/CuaMode 
 (cua-mode t)
 (setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
@@ -96,7 +95,6 @@
     )  
 )
 
-(if (eq window-system 'nil)
-  (message "window-system nil")
+(if (not(eq window-system 'nil))
   (scroll-bar-mode 0)
 )
