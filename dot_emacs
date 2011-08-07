@@ -119,7 +119,9 @@
   )
 
 (if (system-type-is-darwin)
-  (message "system is darwin")
-  (scroll-mode)
-  (set-default-font "-apple-Inconsolata-medium-normal-normal-*-13-*-*-*-m-0-iso10646-1")
-  ) 
+  (progn
+    (message "system is darwin")
+    (set-default-font "-apple-Inconsolata-medium-normal-normal-*-13-*-*-*-m-0-iso10646-1")
+    (scroll-bar-mode)
+    )  
+)
