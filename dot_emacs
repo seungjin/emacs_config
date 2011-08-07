@@ -7,6 +7,9 @@
 ;;; Invoke M-x package-refresh-content
 ;;;
 
+
+(setq inhibit-startup-message t)
+
 ;;
 ;; http://tromey.com/elpa/install.html
 ;; Emacs Lisp Package Archive
