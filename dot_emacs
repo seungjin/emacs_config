@@ -109,3 +109,14 @@
 (set-keyboard-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+
+;; split window at initial time
+(split-window-vertically)
+(other-window 1)
+;;(shrink-window 10)
+;;(let ((window-size-fixed nil))
+;; (enlarge-window 10))
+(shell)
+(linum-mode 0)
+(other-window 1)
