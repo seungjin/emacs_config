@@ -1,0 +1,97 @@
+
+
+;;; emacs version 23.2 on mac
+
+;;;
+;;; Reload your ~/.emacs file or restart Emacs
+;;; Invoke M-x package-refresh-content
+;;;
+
+;;
+;; http://tromey.com/elpa/install.html
+;; Emacs Lisp Package Archive
+;; Run the command M-x package-list-packages.
+
+(setq load-path (append '("~/.emacs.d") load-path))
+
+;;no menu bar
+(menu-bar-mode 0)
+
+;;I always run a shell in Emacs. Always always.
+;;(shell)
+
+;; 
+(auto-revert-mode 1)
+
+;;'side line number'
+(require 'linum)
+(global-linum-mode)
+
+(setq line-number-mode t) 
+(setq column-number-mode t)
+
+;;highlight line numbercolor-theme-6.6.0
+;;(hl-line-mode 1)
+;;(global-hl-line-mode 1)
+;;(set-face-background 'hl-line "#CCCCCC")  ;; Emacs 22 Only
+;(set-face-background 'hl-line "light yellow") ;; Emacs 22 Only
+;(set-face-background 'highlight "#CCCCCC")  ;; Emacs 21 Only
+;
+
+;;tab space
+;;I like tab space = 2. 
+(setq default-tab-width 2)
+
+(setq-default indent-tabs-mode nil)    ; use only spaces and no tabs
+(setq default-tab-width 2)
+
+;;
+(global-auto-revert-mode 1)
+
+(global-set-key (kbd "M-j") 'windmove-down)
+(global-set-key (kbd "M-k") 'windmove-up)
+(global-set-key (kbd "M-h") 'windmove-left)
+(global-set-key (kbd "M-l") 'windmove-right)   
+
+;;
+(setq tramp-default-method "ssh")
+(require 'tramp)
+
+(load "~/.emacs.d/seungjin/clear-shell.el")
+(load "~/.emacs.d/seungjin/insert-current-date-time.el")
+
+
+;; http://dev.clojure.org/display/doc/Getting+Started+with+Emacs
+
+;(add-to-list 'load-path "~/.emacs.d/elpa")
+;(require 'package)
+;(add-to-list 'package-archives
+;	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+;(package-initialize)
+
+(load "~/.emacs.d/clojure-mode/clojure-mode.el")
+
+;; (require 'paredit) if you didn't install via package.el
+(defun turn-on-paredit () (paredit-mode 1))
+(add-hook 'clojure-mode-hook 'turn-on-paredit)
+
+
+(add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     (color-theme-charcoal-black)))
+
+;;(scroll-bar-mode)
+
+
+;;http://www.emacswiki.org/CuaMode 
+(cua-mode t)
+(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+(transient-mark-mode 1) ;; No region when it is not highlighted
+(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+
+;;(set-default-font "-apple-Inconsolata-medium-normal-normal-*-13-*-*-*-m-0-iso10646-1")
+;; download apple inconsolata font:http://www.levien.com/type/myfonts/inconsolata.html
+;; http://www.google.com/webfonts/specimen/Inconsolata 
