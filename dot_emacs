@@ -63,7 +63,6 @@
 (load "~/.emacs.d/seungjin/clear-shell.el")
 (load "~/.emacs.d/seungjin/insert-current-date-time.el")
 
-
 ;; http://dev.clojure.org/display/doc/Getting+Started+with+Emacs
 
 ;(add-to-list 'load-path "~/.emacs.d/elpa")
@@ -91,6 +90,9 @@
 (setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
 (transient-mark-mode 1) ;; No region when it is not highlighted
 (setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+;;in cua mode, colume edition is Ctrl+Ret
+
+
 
 (if (string-equal system-type "darwin")
   (progn
@@ -120,3 +122,14 @@
 (shell)
 (linum-mode 0)
 (other-window 1)
+
+
+
+;;;
+;;;
+;;;
+(autoload 'python-mode "python-mode" "Python Mode." t)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(add-to-list 'interpreter-mode-alist '("python" . python-mode))
+;;; use C-c ! to start ipython instead of python: http://ipython.scipy.org
+
