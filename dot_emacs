@@ -132,4 +132,4 @@
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
 ;;; use C-c ! to start ipython instead of python: http://ipython.scipy.org
-
+;;; need to install ipython (easy_install)
