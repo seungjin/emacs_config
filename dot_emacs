@@ -133,3 +133,9 @@
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
 ;;; use C-c ! to start ipython instead of python: http://ipython.scipy.org
 ;;; need to install ipython (easy_install)
+
+
+
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq-default python-indent 2)
