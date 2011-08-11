@@ -137,7 +137,6 @@
 ;;; use C-c ! to start ipython instead of python: http://ipython.scipy.org
 ;;; need to install ipython (easy_install)
 
-<<<<<<< HEAD
 (add-hook 'python-mode-hook
   (lambda ()
     (set (make-variable-buffer-local 'beginning-of-defun-function)
@@ -159,7 +158,6 @@
                     tab-width 2))))
 
 (setq cua-auto-tabify-rectangles nil)
-=======
 
 
 (defun new-shell ()
@@ -180,4 +178,3 @@
 (setq-default truncate-lines t)
 
 
->>>>>>> 604f26563c8cf13f3c6345b4135860b38ffa2fd4
