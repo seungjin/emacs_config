@@ -175,6 +175,7 @@
 (global-auto-revert-mode t)
 
 ;; I don't want to do text wrap
-(setq-default truncate-lines t)
+;;(setq-default truncate-lines t)
+(setq-default truncate-lines f)
 
 
