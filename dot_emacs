@@ -176,6 +176,6 @@
 
 ;; I don't want to do text wrap
 ;;(setq-default truncate-lines t)
-(setq-default truncate-lines f)
+(setq-default truncate-lines 0)
 
 
