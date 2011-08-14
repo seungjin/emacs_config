@@ -77,6 +77,8 @@
 (defun turn-on-paredit () (paredit-mode 1))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
+;; my lein path
+(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
 
 (add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
 (require 'color-theme)
@@ -177,5 +179,12 @@
 ;; I don't want to do text wrap
 ;;(setq-default truncate-lines t)
 (setq-default truncate-lines 0)
+
+
+
+
+
+
+
 
 
