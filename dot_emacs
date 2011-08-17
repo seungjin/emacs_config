@@ -76,12 +76,12 @@
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
 
-(add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
-(require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-initialize)
-     (color-theme-charcoal-black)))
+;(add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
+;(require 'color-theme)
+;(eval-after-load "color-theme"
+;  '(progn
+;     (color-theme-initilize)
+;     (color-theme-charcoal-black)))
 
 ;;http://www.emacswiki.org/CuaMode 
 (cua-mode t)
@@ -97,4 +97,10 @@
 
 (if (not(eq window-system 'nil))
   (scroll-bar-mode 0)
+  ((add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initilize)
+     (color-theme-charcoal-black))))
 )
