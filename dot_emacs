@@ -102,7 +102,6 @@
 (if (string-equal system-type "darwin")
   (progn
     (set-default-font "-apple-Inconsolata-medium-normal-normal-*-13-*-*-*-m-0-iso10646-1")
-<<<<<<< HEAD
     (add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
     (require 'color-theme)
     (eval-after-load "color-theme"
@@ -110,15 +109,6 @@
 		(color-theme-initialize)
 		(color-theme-charcoal-black)))
     )  
-=======
-(add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
-(require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-initilize)
-     (color-theme-charcoal-black)))    
-  )  
->>>>>>> 4aaef19754bcc32c7a9614fb8856bc094cea9a96
 )
 
 (if (not(eq window-system 'nil))
